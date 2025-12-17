@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+	--animate-appear: appear 0.3s ease-in-out;
+
+	@keyframes appear {
+		0% {opacity: 0;}
+		100% {opacity: 1;}
+	}
+
+	--animate-right: right 1.5s infinite;
+
+	@keyframes right {
+		0% {transform: translateX(0);}
+		100% {transform: translateX(25%);}
+	}
+}
+
+div.fetched-content {
+	h1 {
+		font-size: 2rem;
+		font-weight: bold;
+	}
+
+	* {
+		font-size: 1.125rem;
+	}
+
+	p {
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	div > iframe {
+		max-height: 30rem;
+	}
+}

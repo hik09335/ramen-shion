@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: KozGoPr6N-Bold-90ms-RKSJ-H, 'Kozuka Gothic Pr6N';
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      .cls-1, .cls-2 {
+        fill: red;
+      }
+
+      .cls-3 {
+        fill: #fcee21;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-3" d="M32,62c-16.54,0-30-13.46-30-30S15.46,2,32,2s30,13.46,30,30-13.46,30-30,30Z"/>
+    <path class="cls-2" d="M32,4c15.44,0,28,12.56,28,28s-12.56,28-28,28S4,47.44,4,32,16.56,4,32,4M32,0C14.33,0,0,14.33,0,32s14.33,32,32,32,32-14.33,32-32S49.67,0,32,0h0Z"/>
+  </g>
+  <text class="cls-1" transform="translate(14 29.13)"><tspan x="0" y="0">期間</tspan><tspan x="0" y="18">限定</tspan></text>
+</svg>
