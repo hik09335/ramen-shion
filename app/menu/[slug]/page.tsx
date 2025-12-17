@@ -72,8 +72,8 @@ function ToppingDetailsList({toppings}: {toppings: Topping[]}) {
 }
 
 export async function generateStaticParams() {
-    const menuList = await getMenu();
+    const menuList = await cmsClient.getAllContentIds({ endpoint: 'menu' });
     return menuList.map((menu) => ({
-        slug: menu.id,
+        slug: menu,
     }))
 }
