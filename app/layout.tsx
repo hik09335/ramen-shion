@@ -37,7 +37,7 @@ export default async function RootLayout({
 			>
 				<header className="justify-items-center sticky top-0 bg-[#fafafa] z-50 overflow-x-clip">
 					<div className="absolute drop-shadow-md drop-shadow-zinc-500 size-full bg-white -z-10"></div>
-					<div className="flex items-center justify-between w-full max-w-[min(90%,var(--container-5xl))]">
+					<div className="flex items-center justify-between px-4 container">
 						<Link href={'/'} className="block">
 							<Image
 								src={logoImage}
@@ -49,18 +49,18 @@ export default async function RootLayout({
 						<GlobalNavigation/>
 					</div>
 				</header>
-				<main className='justify-items-center'>
+				<main className=''>
 					{
 						topPage && <TopHeadingText htmlText={topPage.content}/>
 					}
-					<div className="max-w-[min(90%,var(--container-5xl))] w-full">
+					<div className="container">
 						{children}
 					</div>
 				</main>
 
 				<footer className="justify-items-center">
 					{aboutPage &&
-						<div className="main__about mb-15 max-w-[min(90%,var(--container-5xl))] w-full">
+						<div className="main__about mb-15 container">
 							<SectionWrapper title={aboutPage.title}>
 								<div className="flex gap-x-10 max-sm:flex-col-reverse max-sm:text-center">
 									<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d103707.63186087763!2d139.76014300000003!3d35.680363!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c0d02d8064d%3A0xd11a5f0b379e6db7!2z55qH5bGF!5e0!3m2!1sja!2sus!4v1765045150820!5m2!1sja!2sus" className="w-full max-h-[450px] h-[450px] border-0" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>

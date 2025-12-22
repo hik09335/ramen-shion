@@ -43,11 +43,11 @@ export function MenuRenderer({menu, index}: {menu: Menu, index:number}) {
 	const menuUrl = `/menu/${menu.id}`;
 	return (
 		<div className={`w-80 group shadow-gray-400 shadow hover:shadow-amber-700 hover:shadow-md transition-all rounded-2xl animate-appear`}>
-			<Link href={menuUrl} /*prefetch={false}*/ className='block justify-items-center size-full p-4'>
+			<Link href={menuUrl} /*prefetch={false}*/ className='flex flex-col items-center size-full p-4'>
 				<h3 className='text-2xl mb-2 border-b border-transparent group-hover:border-black transition-colors'>{menu.name}</h3>
 				<RamenIcon  menu={menu}/>
 				<p className='mt-4'>{menu.description}</p>
-				<p className='mt-4 text-[20px]'>{menu.price > 0 ? `${menu.price}円` : '無料'}</p>
+				<p className='mt-4 text-xl'>{menu.price > 0 ? `${menu.price}円` : '無料'}</p>
 			</Link>
 		</div>
 	);
