@@ -53,7 +53,7 @@ export default async function RootLayout({
 					{
 						topPage && <TopHeadingText htmlText={topPage.content}/>
 					}
-					<div className="container">
+					<div className="container mx-auto">
 						{children}
 					</div>
 				</main>
