@@ -35,9 +35,9 @@ export default async function RootLayout({
 				className={`${yuji.className} antialiased bg-[#fafafa]`}
 				suppressHydrationWarning
 			>
-				<header className="justify-items-center sticky top-0 bg-[#fafafa] z-50 overflow-x-clip">
-					<div className="absolute drop-shadow-md drop-shadow-zinc-500 size-full bg-white -z-10"></div>
-					<div className="flex items-center justify-between px-4 container">
+				<header className="justify-items-center sticky top-0 bg-[#fafafa] z-50 overflow-x-clip h-13 sm:h-16">
+					<div className="absolute drop-shadow-sm drop-shadow-zinc-500 size-full bg-white -z-10"></div>
+					<div className="flex items-center justify-between px-4 container h-full">
 						<Link href={'/'} className="block">
 							<Image
 								src={logoImage}

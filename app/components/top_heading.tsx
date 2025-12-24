@@ -13,7 +13,7 @@ export default function TopHeadingText({htmlText}: {htmlText: string}) {
         window.addEventListener("resize", ()=>{setIsSM(window.innerWidth < 640)})
     }, []);
     return (
-        <div className={`flex flex-col place-items-center relative mb-15 sm:h-[calc(100vh-4rem)] sm:max-h-150 w-full ${isVisible ? 'block' : 'hidden'}`}>
+        <div className={`flex flex-col place-items-center relative mb-15 sm:h-[calc(100vh-4rem)] w-full ${isVisible ? 'block' : 'hidden'}`}>
             <Image
                 src={isSM ? bgImage : bgBigImage}
                 alt="ラーメンの背景"

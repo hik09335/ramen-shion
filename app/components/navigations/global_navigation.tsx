@@ -117,7 +117,7 @@ export default function GlobalNavigation({}: {}){
     }, []);
 
     return (
-        <nav className="flex place-items-center place-content-center gap-4">
+        <nav className="flex place-items-center place-content-center gap-4 h-full">
             <div className={`${shopState.color} rounded-md text-white px-1.5 flex flex-col place-items-center`}>
                 {shopState.text.map((t)=>{
                     return <span className="block -mt-1" key={t}>{t}</span>
@@ -126,7 +126,7 @@ export default function GlobalNavigation({}: {}){
             <ol className={`
                 flex max-md:-z-10
                 max-md:absolute max-md:top-0 max-md:flex-col
-                max-md:w-screen max-md:h-screen max-md:place-content-center max-md:place-items-center max-md:gap-y-10
+                max-md:w-screen max-md:h-screen max-md:place-content-center max-md:place-items-center max-md:gap-y-10 h-full
                 transition-all ${isOpen ? 'right-0' : 'right-[-100vw]'}
             `}>
                 {/* BG */}

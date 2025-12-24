@@ -10,8 +10,8 @@ export interface LinkInfo {
 
 export default function SectionWrapper({title, linkInfo=null, children}: {title:string, children: ReactNode, linkInfo?:LinkInfo|null|undefined}) {
     return (
-        <section className="mb-15 mt-15">
-            <h2 className='text-4xl font-bold mb-6 flex items-center gap-x-5 whitespace-nowrap'>
+        <section className="mb-15 mt-15 sm:mb-30 sm:mt-30">
+            <h2 className='text-4xl font-bold mb-8 sm:mb-15 flex items-center gap-x-5 whitespace-nowrap'>
                 <span className='inline-block h-px w-full bg-black'/>
                 <span>{title}</span>
                 <span className='flex w-full items-center'>
